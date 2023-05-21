@@ -5,10 +5,10 @@ I have used Tokenize,Encoder,Decoder,Seq2Seq,Train_Model funtions to train the m
 Tokenize Function will take input language,output language as parameters while initializing and this function can be used to convert word to tensor and tensor to word and also this function can convert input,target pair together to the tensore. This can be achieved using Tokenize.tensorsFromPair(pair) and Tokenize.PairFromtensors(pair_of_Tensor).
 ## Q1:
 ### Encoder class
-Encoder Function will encode the given token and returns output,hidden,cell vectors.
-Encoder Functions have the following hyperparameters:
-Encoder : input_size,embedding_size,hidden_size,num_layers, dropouts,cell_type,bidirectional
-This function gives us the flexibility to choose the hyperparameters such as:
+Encoder Function will encode the given token and returns output,hidden,cell vectors. <br>
+Encoder Functions have the following hyperparameters:<br>
+Encoder : input_size,embedding_size,hidden_size,num_layers, dropouts,cell_type,bidirectional<br>
+This function gives us the flexibility to choose the hyperparameters such as:<br>
 cell type : "RNN","GRU","LSTM"
 bidirectional : "True", "False"
 dropout : [number between 0 to 1]
