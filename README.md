@@ -1,6 +1,11 @@
 # ME19B031_CS6910_ASSIGNMENT_3
+This Repository Containes:
+predictions_vanilla_valid.csv - Predictions on Validation Data using Vanilla Model <br>
+predictions_vanilla_test.csv - Predictions on Test Data using Vanilla Model <br>
+predictions_attention_valid.csv - Predictions on Validation Data using Attention Model <br>
+predictions_attention_test.csv - Predictions on Test Data using Attention Model <br>
 
-This repository contains ME19B031_VANILLA_FINAL.ipynb file.
+This repository also contains ME19B031_VANILLA_FINAL.ipynb file.
 I have used Tokenize,Encoder,Decoder,Seq2Seq,Train_Model funtions to train the model.
 Tokenize Function will take input language,output language as parameters while initializing and this function can be used to convert word to tensor and tensor to word and also this function can convert input,target pair together to the tensore. This can be achieved using Tokenize.tensorsFromPair(pair) and Tokenize.PairFromtensors(pair_of_Tensor).
 ## Q1:
@@ -47,4 +52,11 @@ This function will train the Seq2Seq model while printing Train_Loss,Validatioon
 Now we can use that returned model to predict (model.predict) the outputs of valiation data and check the accuracy.<br>
 Sample code for this is shown in ME19B031_TRAIN_VALID.ipynb<br>
 Similarly we do the same thing with the attention model as shown in ME19B031_ASSIGNMENT_3_ATTENTION.ipynb<br>
+
+
+##### This Repository also contains the following:<br>
+ME19B031_CS6910_ASSIGNMENT_3_VANILLA_SWEEP.ipynb - used to generate Vanilla Sweeps <br>
+ME19B031_CS6910_ASSIGNMENT_3_ATTENTION_SWEEP.ipynb - used to generate Attention Sweeps <br>
+ME19B031_ASSIGNMENT_3_VANILLA.ipynb - used best model to get validation and test accuracy <br>
+ME19B031_ASSIGNMENT_3_ATTENTION.ipynb - used best model to get validation and test accuracy <br>
 
