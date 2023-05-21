@@ -3,14 +3,21 @@
 This repository contains ME19B031_VANILLA_FINAL.ipynb file.
 I have used Tokenize,Encoder,Decoder,Seq2Seq,Train_Model funtions to train the model.
 Tokenize Function will take input language,output language as parameters while initializing and this function can be used to convert word to tensor and tensor to word and also this function can convert input,target pair together to the tensore. This can be achieved using Tokenize.tensorsFromPair(pair) and Tokenize.PairFromtensors(pair_of_Tensor).
-Q1:
-### Encoder and Decoder classes
+## Q1:
+### Encoder class
 Encoder Function will encode the given token and returns output,hidden,cell vectors.
-Decoder Function will take the encoded hidden vectors, target tokens(while training) and returns returns the predicted token.
-Encoder and Decoder Functions have the following hyperparameters:
+Encoder Functions have the following hyperparameters:
 Encoder : input_size,embedding_size,hidden_size,num_layers, dropouts,cell_type,bidirectional
+This function gives us the flexibility to choose the hyperparameters such as:
+cell type : "RNN","GRU","LSTM"
+bidirectional : "True", "False"
+dropout : [number between 0 to 1]
+and remaining parameters can take any integer 
+### Decoder class
+Decoder Function will take the encoded hidden vectors, previous output tokens and returns the predicted probability distribution over vocabulary length.
+Decoder Functions have the following hyperparameters:
 Decoder : input_size,embedding_size,hidden_size,output_size,num_layers,dropouts,cell_type,bidirectional
-These functions gives us the flexibility to choose the hyperparameters such as:
+This function gives us the flexibility to choose the hyperparameters such as:
 cell type : "RNN","GRU","LSTM"
 bidirectional : "True", "False"
 dropout : [number between 0 to 1]
